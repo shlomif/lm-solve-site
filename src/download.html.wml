@@ -1,0 +1,36 @@
+#include '../template.wml'
+
+<subject "LM-Solve Downloads" />
+
+<h2>Stable Version</h2>
+
+<define-tag file:with:url>
+<a href="%0">%0</a>
+</define-tag>
+
+<p>
+<file:with:url "LM-Solve-0.6.0.tar.gz" /> - <b>executable and 
+code</b>.
+</p>
+
+<p>
+<file:with:url "LM-Solve-layouts-0.6.0.tar.gz" /> - 
+<b>layouts for some of the puzzles on the sites</b>. I just supply them, but I 
+am not their legal owner. If you write down others, please send them to me.
+</p>
+
+<h2>Development Version</h2>
+
+<p>
+<a href="http://www.cpan.org/modules/by-module/Games/Games-LMSolve-0.7.12.tar.gz">Games-LMSolve-0.7.12.tar.gz</a>
+</p>
+
+<p>
+<:{
+my $ver = `cat ../temp/devel-layouts-ver.txt`;
+my $filename = "LM-Solve-Layouts-$ver.tar.gz";
+print "<a href=\"$filename\">$filename</a>\n";
+}:>
+</p>
+
+
