@@ -1,0 +1,30 @@
+#include '../template.wml'
+
+<subject "LM-Solve Links" />
+
+<h2>Project Resources</h2>
+
+
+<p>
+<a href="http://freshmeat.net/projects/lm-solve/">The Freshmeat Project's
+Record</a><br />
+</p>
+
+<p>
+<a href="http://stalker.iguide.co.il:8080/svn/lm-solve/">The Subversion Repository of the Project</a><br />
+</p>
+
+<h2>Logic Mazes</h2>
+<p>
+<a href="http://www.logicmazes.com/">The Logic Mazes site</a>
+</p>
+<p>
+<a href="http://www.clickmazes.com/">Andrea Glibert's Click-Mazes</a> -
+more mazes.<br />
+</p>
+<p>
+<a href="http://www.bardavid.com/">Yoah Bar-David's site</a> - contains
+applets for constructing and solving Alice Mazes and Minotaur Mazes.<br />
+</p>
+
+

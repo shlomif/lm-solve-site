@@ -8,29 +8,37 @@
 <a href="%0">%0</a>
 </define-tag>
 
+<define-tag file:on:cpan>
+<a href="http://www.cpan.org/modules/by-module/Games/%0">%0</a>
+</define-tag>
+
 <p>
-<file:with:url "LM-Solve-0.6.0.tar.gz" /> - <b>executable and 
+<file:on:cpan "Games-LMSolve-0.8.1.tar.gz" /> - <b>executable and 
 code</b>.
 </p>
 
-<p>
-<file:with:url "LM-Solve-layouts-0.6.0.tar.gz" /> - 
-<b>layouts for some of the puzzles on the sites</b>. I just supply them, but I 
-am not their legal owner. If you write down others, please send them to me.
-</p>
-
+<!--
 <h2>Development Version</h2>
 
 <p>
 <a href="http://www.cpan.org/modules/by-module/Games/Games-LMSolve-0.7.12.tar.gz">Games-LMSolve-0.7.12.tar.gz</a>
 </p>
 
+-->
+
+<h2>Layouts for the Games</h2>
 <p>
 <:{
 my $ver = `cat ../temp/devel-layouts-ver.txt`;
 my $filename = "LM-Solve-Layouts-$ver.tar.gz";
 print "<a href=\"$filename\">$filename</a>\n";
 }:>
+</p>
+
+<p>
+<b>Note:</b> - I just supply these layouts, but I'm not their legal copyrights 
+owner. If you transcribe others, please send them to me, so I can include them
+here.
 </p>
 
 

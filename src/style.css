@@ -24,7 +24,6 @@ div.rightalign { text-align : right }
 */
 td.navbar a:hover { background-color : orange }
 td.main { padding-left : 1em ; margin-left : 1em }
-h1 { font-family : serif }
-h2.plain{ color : black ; border : none ; font-family : serif }
+h2.plain{ color : black ; border : none }
 
 tt { color : #8A2BE2 /* The BlueViolet Color */ }

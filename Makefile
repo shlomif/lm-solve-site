@@ -57,13 +57,13 @@ $(PODS_DESTS_HTMLS) :: $(TARGET)/%.html : src/%.pod
 # $(PACKAGES_DESTS) :: $(PACKAGES_DIR)/% : ./temp/lk-module-compiler-final/%
 # 	cp -f $< $@
 
-upload: upload_berlios
+upload: upload_vipe
 
-upload_berlios: all
-	(cd dest && $(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/perl-begin/htdocs/)
+# upload_berlios: all
+#	(cd dest && $(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/perl-begin/htdocs/)
 
-upload_iglu: all
-	(cd dest && $(RSYNC) -r * shlomif@iglu.org.il:/iglu/html/shlomif/Perl-Begin/)
+upload_vipe: all
+	(cd dest && $(RSYNC) -r * shlomif@vipe.technion.ac.il:public_html/lm-solve/)
 
 DEST_ARC_NAME = $(TARGET)/source/arcs/$(ARC_NAME)
 
