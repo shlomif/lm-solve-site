@@ -30,8 +30,6 @@ WML_FLAGS += --passoption=2,-X --passoption=7,"-S imgsize" -DROOT~.
 
 RSYNC = rsync --progress --verbose --rsh=ssh 
 
-ARC_NAME := $(shell cd temp && ./get-arc-name.sh)
-
 DEST_ARC_PAGE = $(TARGET)/source/index.html
 
 all: dest $(SUBDIRS_DEST) $(DESTS) $(RAW_FILES_DEST)
@@ -65,21 +63,10 @@ upload: upload_vipe
 upload_vipe: all
 	(cd dest && $(RSYNC) -r * shlomif@vipe.technion.ac.il:public_html/lm-solve/)
 
-DEST_ARC_NAME = $(TARGET)/source/arcs/$(ARC_NAME)
-
 .PHONY: 
 
 $(DEST_ARC_PAGE) :: $(TARGET)/% : src/%.wml template.wml .PHONY
-	(cd src && wml $(WML_FLAGS) -DARCNAME=$(ARC_NAME) -DFILENAME=$(patsubst src/%.wml,%,$<) $(patsubst src/%,%,$<)) > $@
-
-arc: $(DEST_ARC_NAME) $(DEST_ARC_PAGE)
-
-$(DEST_ARC_NAME):
-	(cd temp && ./make-archive.sh)
-	mv temp/$(ARC_NAME) $@
-
-upload_arc: arc
-	$(RSYNC) $(ARC_NAME) shlomif@shell.berlios.de:
+	(cd src && wml $(WML_FLAGS) -DFILENAME=$(patsubst src/%.wml,%,$<) $(patsubst src/%,%,$<)) > $@
 
 devel-layouts: unchanged
 	cd temp && bash ./export-layouts.sh && mv -f LM-Solve-Layouts-`cat devel-layouts-ver.txt`.tar.gz ../dest

@@ -27,4 +27,11 @@ more mazes.<br />
 applets for constructing and solving Alice Mazes and Minotaur Mazes.<br />
 </p>
 
+<h2>Articles</h2>
 
+<p>
+<a href="http://www.perl.com/pub/a/2003/11/17/lmsolve.html">Solving
+Puzzles with LM-Solve</a> - how to extend LM-Solve to solve a new puzzle.
+</p>
+
+</p>
