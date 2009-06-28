@@ -55,13 +55,10 @@ $(PODS_DESTS_HTMLS) :: $(TARGET)/%.html : src/%.pod
 # $(PACKAGES_DESTS) :: $(PACKAGES_DIR)/% : ./temp/lk-module-compiler-final/%
 # 	cp -f $< $@
 
-upload: upload_vipe
+upload: upload_shlomif
 
-# upload_berlios: all
-#	(cd dest && $(RSYNC) -r * shlomif@shell.berlios.de:/home/groups/perl-begin/htdocs/)
-
-upload_vipe: all
-	(cd dest && $(RSYNC) -r * shlomif@vipe.technion.ac.il:public_html/lm-solve/)
+upload_shlomif: all
+	(cd dest && $(RSYNC) -a * $${HOMEPAGE_SSH_PATH}/lm-solve/)
 
 .PHONY: 
 

@@ -4,34 +4,39 @@
 
 <h2>Project Resources</h2>
 
-
-<p>
+<ul>
+<li>
 <a href="http://freshmeat.net/projects/lm-solve/">The Freshmeat Project's
-Record</a><br />
-</p>
+Record</a>
+</li>
 
-<p>
-<a href="http://stalker.iguide.co.il:8080/svn/lm-solve/">The Subversion Repository of the Project</a><br />
-</p>
+<li>
+<a href="http://stalker.iguide.co.il:8080/svn/lm-solve/">The Subversion Repository of the Project</a>
+</li>
+</ul>
 
 <h2>Logic Mazes</h2>
-<p>
+
+<ul>
+<li>
 <a href="http://www.logicmazes.com/">The Logic Mazes site</a>
-</p>
-<p>
+</li>
+<li>
 <a href="http://www.clickmazes.com/">Andrea Glibert's Click-Mazes</a> -
-more mazes.<br />
-</p>
-<p>
+more mazes.
+</li>
+<li>
 <a href="http://www.bardavid.com/">Yoah Bar-David's site</a> - contains
-applets for constructing and solving Alice Mazes and Minotaur Mazes.<br />
-</p>
+applets for constructing and solving Alice Mazes and Minotaur Mazes.
+</li>
+</ul>
 
 <h2>Articles</h2>
 
-<p>
+<ul>
+<li>
 <a href="http://www.perl.com/pub/a/2003/11/17/lmsolve.html">Solving
 Puzzles with LM-Solve</a> - how to extend LM-Solve to solve a new puzzle.
-</p>
+</li>
+</ul>
 
-</p>

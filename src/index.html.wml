@@ -51,20 +51,23 @@ href="http://www.clickmazes.com/newtilt/ixtilt.htm">Red-Blue Tilt Puzzles
 
 <h2>Links</h2>
 
-<p>
+<ul>
+<li>
 <a href="http://freshmeat.net/projects/lm-solve/">The Freshmeat Project's
-Record</a><br />
-<a href="http://stalker.iguide.co.il:8080/svn/lm-solve/">The Subversion Repository of the Project</a><br />
-</p>
-
-<p>
-<a href="http://www.logicmazes.com/">The Logic Mazes site</a><br />
-<a href="http://www.iit.edu/~maxiori/apps/Theseus.html">The Original
-Applet for Theseus and the Minotaur</a><br />
-<a href="http://www.bardavid.com/">Yoah Bar-David's site</a> - contains
-applets for constructing and solving Alice Mazes and Minotaur Mazes.<br />
-<a href="http://www.clickmazes.com/">Andrea Glibert's Click-Mazes</a> -
-more mazes.<br />
-</p>
+Record</a>
+</li>
+<li>
+<a href="http://stalker.iguide.co.il:8080/svn/lm-solve/">The Subversion Repository of the Project</a>
+</li>
+</ul>
 
 
+<ul>
+<li><a href="http://www.logicmazes.com/">The Logic Mazes site</a></li>
+<li><a href="http://www.iit.edu/~maxiori/apps/Theseus.html">The Original
+Applet for Theseus and the Minotaur</a></li>
+<li><a href="http://www.bardavid.com/">Yoah Bar-David's site</a> - contains
+applets for constructing and solving Alice Mazes and Minotaur Mazes.</li>
+<li><a href="http://www.clickmazes.com/">Andrea Glibert's Click-Mazes</a> -
+more mazes.</li>
+</ul>

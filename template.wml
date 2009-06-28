@@ -58,7 +58,7 @@ http://perl-begin.berlios.de/<get-var url />
 </define-tag>
 
 
-<define-tag vipe:url>http://vipe.technion.ac.il/~shlomif/%0</define-tag>
+<define-tag vipe:url>http://www.shlomifish.org/%0</define-tag>
 <define-tag lect:link><navbarlink "lecture/%0" "%1" host="vipe" /></define-tag>
 
 <define-tag links:group endtag="required">
@@ -157,7 +157,7 @@ http://developer.berlios.de/forum/forum.php?forum_id=2341
 </table>
 <hr />
 <p>
-<b>Webmaster:</b> <a href="mailto:shlomif@vipe.technion.ac.il">Shlomi Fish - shlomif@vipe.technion.ac.il</a>
+<b>Webmaster:</b> <a href="http://www.shlomifish.org/">Shlomi Fish - shlomif@iglu.org.il</a>
 </p>
 
 </body>
