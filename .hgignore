@@ -1,0 +1,4 @@
+defs.mak
+dest
+temp/[\w\-\.]+\.tar\.gz$
+temp/devel-layouts-ver.txt
