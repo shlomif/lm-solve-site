@@ -75,7 +75,7 @@ more mazes.</li>
 
 <define-tag camila_ron>
 ;;; Sponsored by Camila Ron
-;;; Remove at 2013-09-22
+;;; Removed .
 
 <hr />
 
@@ -87,5 +87,3 @@ guaranteed on first attempt.
 </p>
 
 </define-tag>
-
-<camila_ron />
