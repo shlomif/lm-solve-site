@@ -1,17 +1,17 @@
 #!/bin/bash
 list_wmls()
 {
-    find ./src/ -name '*.html.wml' | 
-        sed 's!^\./src/!!' | 
-        sed 's!\.html\.wml$!!' | 
+    find ./src/ -name '*.html.wml' |
+        sed 's!^\./src/!!' |
+        sed 's!\.html\.wml$!!' |
         grep -v '^source/index$' |
         sort
 }
 
 get_subdirs()
 {
-    grep '/' | 
-        sed 's!/[^/]*$!!' |         
+    grep '/' |
+        sed 's!/[^/]*$!!' |
         uniq
 }
 
@@ -27,4 +27,4 @@ echo
 echo "SUBDIRS = $(list_wmls | get_subdirs | add_extra | xargs)"
 echo ) > defs.mak
 
-    
+

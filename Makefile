@@ -28,7 +28,7 @@ SUBDIRS_DEST = $(addprefix $(TARGET)/,$(SUBDIRS))
 
 WML_FLAGS += --passoption=2,-X --passoption=7,"-S imgsize" -DROOT~.
 
-RSYNC = rsync --progress --verbose --rsh=ssh 
+RSYNC = rsync --progress --verbose --rsh=ssh
 
 DEST_ARC_PAGE = $(TARGET)/source/index.html
 
@@ -36,7 +36,7 @@ all: dest $(SUBDIRS_DEST) $(DESTS) $(RAW_FILES_DEST)
 
 dest:
 	if [ ! -e $@ ] ; then mkdir $@ ; fi
-	
+
 $(DESTS) :: $(TARGET)/% : src/%.wml template.wml
 	(cd src && wml $(WML_FLAGS) -DFILENAME=$(patsubst src/%.wml,%,$<) $(patsubst src/%,%,$<)) > $@
 
@@ -60,12 +60,12 @@ upload: upload_shlomif
 upload_shlomif: all
 	(cd dest && $(RSYNC) -a * $${HOMEPAGE_SSH_PATH}/lm-solve/)
 
-.PHONY: 
+.PHONY:
 
 $(DEST_ARC_PAGE) :: $(TARGET)/% : src/%.wml template.wml .PHONY
 	(cd src && wml $(WML_FLAGS) -DFILENAME=$(patsubst src/%.wml,%,$<) $(patsubst src/%,%,$<)) > $@
 
 devel-layouts: unchanged
 	cd temp && bash ./export-layouts.sh && mv -f LM-Solve-Layouts-`cat devel-layouts-ver.txt`.tar.gz ../dest
-	
+
 

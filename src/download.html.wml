@@ -13,7 +13,7 @@
 </define-tag>
 
 <p>
-<file:on:cpan "Games-LMSolve-0.8.1.tar.gz" /> - <b>executable and 
+<file:on:cpan "Games-LMSolve-0.8.1.tar.gz" /> - <b>executable and
 code</b>
 </p>
 
@@ -36,7 +36,7 @@ print "<a href=\"$filename\">$filename</a>\n";
 </p>
 
 <p>
-<b>Note:</b> - I just supply these layouts, but I'm not their legal copyrights 
+<b>Note:</b> - I just supply these layouts, but I'm not their legal copyrights
 owner. If you transcribe others, please send them to me, so I can include them
 here.
 </p>

@@ -1,8 +1,8 @@
 a:hover, img.highlight:hover { background-color : lightgreen }
-td.navbar 
-{ 
+td.navbar
+{
     background-color: #ddabea;
-    width : 20% ; 
+    width : 20% ;
     border-color : black;
     border-width : thick;
     border-style : double;
