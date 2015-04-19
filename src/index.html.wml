@@ -3,9 +3,9 @@
 <subject "LM-Solve - a Logic Mazes Solver" />
 
 <p>
-LM-Solve is a set of solvers I wrote for the Logic Mazes featured on the 
+LM-Solve is a set of solvers I wrote for the Logic Mazes featured on the
 <a href="http://www.logicmazes.com/">Logic Mazes site</a> and
-<a href="http://www.clickmazes.com/">Click Mazes site</a>. They are written 
+<a href="http://www.clickmazes.com/">Click Mazes site</a>. They are written
 in Perl and should be very portable.
 </p>
 
@@ -16,7 +16,7 @@ in Perl and should be very portable.
 <h3>21-Nov-2003</h3>
 
 <p>
-<a href="http://www.perl.com/pub/a/2003/11/17/lmsolve.html">An article about 
+<a href="http://www.perl.com/pub/a/2003/11/17/lmsolve.html">An article about
 LM-Solve</a> was published in <a href="http://www.perl.com/">Perl.com</a>.
 This article covers extending LM-Solve to solve a new kind of puzzle.
 </p>
@@ -24,7 +24,7 @@ This article covers extending LM-Solve to solve a new kind of puzzle.
 <h3>1-Aug-2003</h3>
 
 <p>
-Nearly one year since the last stable release of LM-Solve, I am proud to 
+Nearly one year since the last stable release of LM-Solve, I am proud to
 announce the new release: 0.8.1. This release features the ability to solve
 Hexagonal Plank Puzzles, as well as a programmer API and documentation. Get
 it while it's hot!
@@ -35,7 +35,7 @@ it while it's hot!
 <p>
 LM-Solve version 0.6.0 was released. This versions sports support for
 <a href="http://www.clickmazes.com/planks/ixplanks.htm">
-Planks in the Swamp Puzzles</a> (rectangular only), and can be built as 
+Planks in the Swamp Puzzles</a> (rectangular only), and can be built as
 an RPM out of the box.
 </p>
 
@@ -43,7 +43,7 @@ an RPM out of the box.
 
 <p>
 LM-Solve version 0.4.0 was released. This version features support for three
-types of <a href="http://www.clickmazes.com/newtilt/ixtilt2d.htm">tilt 
+types of <a href="http://www.clickmazes.com/newtilt/ixtilt2d.htm">tilt
 mazes</a>: single goal, multiple goals, and <a
 href="http://www.clickmazes.com/newtilt/ixtilt.htm">Red-Blue Tilt Puzzles
 </a>
