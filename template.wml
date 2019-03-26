@@ -1,9 +1,3 @@
-# #use wml::des::navbar
-
-<define-tag email:link>
-<a href="mailto:%0">%0</a>
-</define-tag>
-
 # The Definition of the page itself
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html
@@ -50,47 +44,13 @@ $(ROOT)/<get-var url />
 </define-tag>
 
 
-<define-tag vipe:url>https://www.shlomifish.org/%0</define-tag>
-<define-tag lect:link><navbarlink "lecture/%0" "%1" host="vipe" /></define-tag>
-
 <define-tag links:group endtag="required">
 <ul class="navbarmain">
 %body
 </ul>
 </define-tag>
 
-<define-tag wiki:link whitespace="delete">
-<preserve url />
-<set-var %attributes />
-<ifeq "<get-var url />" ""
-    ""
-    "<set-var url="?<get-var url />" />"
-    />
-<site:link url="cgi-bin/chiq_chaq/chiq.pl" /><get-var url />
-<restore url />
-</define-tag>
-
-<define-tag mailing:list:link whitespace="delete">
-https://lists.berlios.de/mailman/listinfo/perl-begin-help
-</define-tag>
-
-<define-tag web:forum:link whitespace="delete">
-https://developer.berlios.de/forum/forum.php?forum_id=2341
-</define-tag>
-
 <define-tag nothing></define-tag>
-
-<define-tag navbar:head>
-<preserve href />
-<preserve title />
-<preserve hint />
-<set-var %attributes />
-<set-var title:attr="<if "<get-var hint />" <attributes-quote title=<get-var hint /> /> <nothing /> />" />
-<h2><a href="<get-var href />" <get-var title:attr />><get-var title /></a></h2>
-<restore hint />
-<restore title />
-<restore href />
-</define-tag>
 
 <table summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%">
 <tr>
@@ -102,23 +62,6 @@ https://developer.berlios.de/forum/forum.php?forum_id=2341
 <li><navbarlink "links.html" "Links" /></li>
 </links:group>
 
-
-<define-tag uses:link>
-<preserve href />
-<preserve caption />
-<preserve title />
-<preserve hide />
-<set-var %attributes />
-<set-var t="<if "<get-var title />" <attributes-quote title=<get-var title /> /> "" />" />
-<if "<ifeq "<get-var hide />" "1" "<match "$(FILENAME)" "^uses/" action="report" />" "1" />"
-    "<li><navbarlink "<get-var href />" "<get-var caption />" <get-var t /> /></li>"
-    ""
-    />
-<restore hide />
-<restore title />
-<restore caption />
-<restore href />
-</define-tag>
 
 <define-tag validhtml>
 <br /><br /><br /><br />
@@ -160,7 +103,5 @@ https://developer.berlios.de/forum/forum.php?forum_id=2341
 {#SUBJECT_LOC#:%0:##}
 </define-tag>
 
-
 #   per default we are in body
 {#BODY#:
-
