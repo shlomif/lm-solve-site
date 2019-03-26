@@ -60,6 +60,9 @@ upload: upload_shlomif
 upload_shlomif: all
 	(cd dest && $(RSYNC) -a * $${HOMEPAGE_SSH_PATH}/lm-solve/)
 
+upload_remote: all
+	(cd dest && $(RSYNC) -a * $${__HOMEPAGE_REMOTE_PATH}/lm-solve/)
+
 .PHONY:
 
 $(DEST_ARC_PAGE) : $(TARGET)/% : src/%.wml template.wml .PHONY

@@ -4,7 +4,7 @@
 
 <p>
 LM-Solve is a set of solvers I wrote for the Logic Mazes featured on the
-<a href="http://www.logicmazes.com/">Logic Mazes site</a> and
+<a href="https://www.logicmazes.com/">Logic Mazes site</a> and
 <a href="http://www.clickmazes.com/">Click Mazes site</a>. They are written
 in Perl and should be very portable.
 </p>
@@ -16,8 +16,8 @@ in Perl and should be very portable.
 <h3>21-Nov-2003</h3>
 
 <p>
-<a href="http://www.perl.com/pub/a/2003/11/17/lmsolve.html">An article about
-LM-Solve</a> was published in <a href="http://www.perl.com/">Perl.com</a>.
+<a href="https://www.perl.com/pub/a/2003/11/17/lmsolve.html">An article about
+LM-Solve</a> was published in <a href="https://www.perl.com/">Perl.com</a>.
 This article covers extending LM-Solve to solve a new kind of puzzle.
 </p>
 
@@ -72,7 +72,7 @@ transcribed (and possibly proprietary) layouts.
 
 <li>
 <p>
-<a href="http://freecode.com/projects/lm-solve/">The Freecode Project's
+<a href="https://freecode.com/projects/lm-solve/">The Freecode Project's
 Record</a> - Freecode stopped being updated.
 </p>
 </li>
@@ -81,8 +81,8 @@ Record</a> - Freecode stopped being updated.
 
 
 <ul>
-<li><p><a href="http://www.logicmazes.com/">The Logic Mazes site</a></p></li>
-<li><p><a href="http://www.iit.edu/~maxiori/apps/Theseus.html">The Original
+<li><p><a href="https://www.logicmazes.com/">The Logic Mazes site</a></p></li>
+<li><p><a href="https://logicmazes.com/theseus.html">The Original
 Applet for Theseus and the Minotaur</a></p></li>
 <li><p><a href="http://www.bardavid.com/">Yoah Bar-David's site</a> - contains
 applets for constructing and solving Alice Mazes and Minotaur Mazes.</p></li>
