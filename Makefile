@@ -37,22 +37,22 @@ all: dest $(SUBDIRS_DEST) $(DESTS) $(RAW_FILES_DEST)
 dest:
 	if [ ! -e $@ ] ; then mkdir $@ ; fi
 
-$(DESTS) :: $(TARGET)/% : src/%.wml template.wml
+$(DESTS) : $(TARGET)/% : src/%.wml template.wml
 	(cd src && wml $(WML_FLAGS) -DFILENAME=$(patsubst src/%.wml,%,$<) $(patsubst src/%,%,$<)) > $@
 
-$(RAW_FILES_DEST) :: $(TARGET)/% : src/%
+$(RAW_FILES_DEST) : $(TARGET)/% : src/%
 	cp -f $< $@
 
-$(SUBDIRS_DEST) :: % : unchanged
+$(SUBDIRS_DEST) : % :
 	if [ ! -e $@ ] ; then mkdir $@ ; fi
 
-$(PODS_DESTS) :: $(TARGET)/% : src/%
+$(PODS_DESTS) : $(TARGET)/% : src/%
 	cp -f $< $@
 
-$(PODS_DESTS_HTMLS) :: $(TARGET)/%.html : src/%.pod
+$(PODS_DESTS_HTMLS) : $(TARGET)/%.html : src/%.pod
 	pod2html $< > $@
 
-# $(PACKAGES_DESTS) :: $(PACKAGES_DIR)/% : ./temp/lk-module-compiler-final/%
+# $(PACKAGES_DESTS) : $(PACKAGES_DIR)/% : ./temp/lk-module-compiler-final/%
 # 	cp -f $< $@
 
 upload: upload_shlomif
@@ -62,10 +62,8 @@ upload_shlomif: all
 
 .PHONY:
 
-$(DEST_ARC_PAGE) :: $(TARGET)/% : src/%.wml template.wml .PHONY
+$(DEST_ARC_PAGE) : $(TARGET)/% : src/%.wml template.wml .PHONY
 	(cd src && wml $(WML_FLAGS) -DFILENAME=$(patsubst src/%.wml,%,$<) $(patsubst src/%,%,$<)) > $@
 
-devel-layouts: unchanged
+devel-layouts:
 	cd temp && bash ./export-layouts.sh && mv -f LM-Solve-Layouts-`cat devel-layouts-ver.txt`.tar.gz ../dest
-
-
