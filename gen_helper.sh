@@ -27,4 +27,4 @@ echo
 echo "SUBDIRS = $(list_wmls | get_subdirs | add_extra | xargs)"
 echo ) > defs.mak
 
-
+printf "%s\\n" "include lib/make/main.mak" > "Makefile"
