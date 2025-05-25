@@ -8,8 +8,8 @@ list_wmls()
 
 get_subdirs()
 {
-    grep '/' |
-        sed 's!/[^/]*$!!' |
+    perl -nl -E 'next unless m#/#; s!/[^/]*\z!!; say' |
+        sort |
         uniq
 }
 
