@@ -2,9 +2,7 @@
 list_wmls()
 {
     find ./src/ -name '*.html.wml' |
-        sed 's!^\./src/!!' |
-        sed 's!\.html\.wml$!!' |
-        grep -v '^source/index$' |
+        perl -nl -E 's!\A\./src/!! ; s!\.html\.wml\z!! ; if ( not m!\Asource/index\z! ) { say; }' |
         sort
 }
 
