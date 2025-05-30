@@ -70,3 +70,13 @@ $(DEST_ARC_PAGE) : $(TARGET)/% : src/%.wml template.wml .PHONY
 
 devel-layouts:
 	cd temp && bash ./export-layouts.sh && mv -f LM-Solve-Layouts-`cat devel-layouts-ver.txt`.tar.gz ../dest
+
+TT2S = dest/links.html
+
+all: $(TT2S)
+
+$(TT2S): dest/%: src/%.tt2 dest
+	perl bin/tt-render.pl && touch $@
+
+test: all
+	prove Tests/*.py

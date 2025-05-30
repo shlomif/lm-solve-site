@@ -1,0 +1,98 @@
+[%- SET body_params = '' -%]
+[% SET html_lang = "en" %]
+[%- SET more_keywords = '' -%]
+[%- SET xhtml1 = '' -%]
+
+[% SET desc = "LM-Solve: an open source solver for Logic Mazes" %]
+
+[%- BLOCK start_html -%]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="[% html_lang %]">
+<head>
+<title>[% title %]</title>
+[% IF xhtml1 %]
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+[% ELSE %]
+<meta charset="utf-8"/>
+[% END %]
+<meta name="author" content="Shlomi Fish"/>
+<meta name="description" content="[% desc || title %]"/>
+<meta name="keywords" content="mazes, riddles, logic mazes, open source, Shlomi Fish[% more_keywords %]"/>
+<link rel="stylesheet" href="[% base_path %]style.css" media="screen" title="Normal"/>
+<link rel="stylesheet" href="[% base_path %]print.css" media="print"/>
+<link rel="shortcut icon" href="[% base_path %]favicon.ico" type="image/x-icon"/>
+[%- nav_links -%]
+
+[% TRY %]
+[% INCLUDE page_extra_head_elements %]
+[% CATCH file %]
+[% END %]
+
+</head>
+
+<body[% body_params %]>
+
+<table[% IF 0 %] summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%"[% END %]>
+<tr>
+<td class="navbar" style="width:20%">
+[% nav_menu_html %]
+</td>
+<td class="main">
+<h1>[% title %]</h1>
+[%- END -%]
+
+[%- BLOCK end_html -%]
+
+</td>
+</tr>
+</table>
+<hr />
+<p>
+<b>Webmaster:</b> <a href="https://www.shlomifish.org/">Shlomi Fish</a>
+- <a href="mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>
+</p>
+
+<p><a href=
+"http://www.addtoany.com/share_save?linkurl=[% share_link %]&amp;linkname=">
+<img src="[% base_path %]images/share_save_171_16.png" width="171" height="16"
+class="bless" alt="Share/Bookmark"/></a></p>
+<div id="container-footer"></div>
+<div id="footer" class="footer">
+[% BLOCK removed  %]
+
+<hr/>
+<div class="righty">
+[% IF raw_fn_path != "comparison/comparison.html" %]
+<p><!-- Creative Commons License --> <a rel="license" href=
+"http://creativecommons.org/licenses/by/2.0/"><img alt=
+"Creative Commons License" src=
+"[% base_path %]images/somerights20.png"/></a><br/>
+This work is licensed under the <a rel="license" href=
+"http://creativecommons.org/licenses/by/2.0/">Creative Commons
+Attribution License version 2.0</a> (or at your option - any later
+version).<!-- /Creative Commons License --></p>
+[% END %]
+</div>
+<div class="foot_left">
+<p class="webmaster">Webmaster: <a href=
+"https://www.shlomifish.org/">Shlomi Fish</a> (<a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>)</p>
+</div>
+[% END %]
+</div>
+</body>
+</html>
+[%- END -%]
+
+[% PROCESS "h_sections.tt2" %]
+
+[%- BLOCK wrap_html -%]
+[%- PROCESS start_html -%]
+[% content %]
+[%- PROCESS end_html -%]
+[%- END -%]
+
+[%-# vim:ft=tt2html:
+-%]

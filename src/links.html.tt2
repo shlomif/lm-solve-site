@@ -1,6 +1,6 @@
-#include '../template.wml'
+[%- SET title = "LM-Solve Links" -%]
 
-<subject "LM-Solve Links" />
+[%- WRAPPER wrap_html -%]
 
 <h2>Project Resources</h2>
 
@@ -45,3 +45,4 @@ Puzzles with LM-Solve</a> - how to extend LM-Solve to solve a new puzzle.
 </li>
 </ul>
 
+[% END %]
