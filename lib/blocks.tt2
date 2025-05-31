@@ -58,11 +58,10 @@
 "http://www.addtoany.com/share_save?linkurl=[% share_link %]&amp;linkname=">
 <img src="[% base_path %]images/share_save_171_16.png" width="171" height="16"
 class="bless" alt="Share/Bookmark"/></a></p>
-</div>
 <div id="container-footer"></div>
-</div>
-</div>
 <div id="footer" class="footer">
+[% BLOCK removed  %]
+
 <hr/>
 <div class="righty">
 [% IF raw_fn_path != "comparison/comparison.html" %]
@@ -81,6 +80,7 @@ version).<!-- /Creative Commons License --></p>
 "https://www.shlomifish.org/">Shlomi Fish</a> (<a href=
 "mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>)</p>
 </div>
+[% END %]
 </div>
 </body>
 </html>
