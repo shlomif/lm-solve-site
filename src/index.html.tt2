@@ -1,6 +1,6 @@
-#include '../template.wml'
+[% SET title = "LM-Solve - a Logic Mazes Solver" %]
 
-<subject "LM-Solve - a Logic Mazes Solver" />
+[% WRAPPER wrap_html %]
 
 <p>
 LM-Solve is a set of solvers I wrote for the Logic Mazes featured on the
@@ -90,9 +90,11 @@ applets for constructing and solving Alice Mazes and Minotaur Mazes.</p></li>
 more mazes.</p></li>
 </ul>
 
-<define-tag camila_ron>
-;;; Sponsored by Camila Ron
-;;; Removed .
+[% IF 0 %]
+
+[%#Sponsored by Camila Ron
+Removed .
+%]
 
 <hr />
 
@@ -103,4 +105,6 @@ prepare and pass <a href="http://www.testking.com/640-863.htm">640-863</a> exam
 guaranteed on first attempt.
 </p>
 
-</define-tag>
+[% END %]
+
+[% END %]
