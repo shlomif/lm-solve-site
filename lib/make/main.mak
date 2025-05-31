@@ -77,3 +77,6 @@ all: $(TT2S)
 
 $(TT2S): dest/%: src/%.tt2 dest
 	perl bin/tt-render.pl && touch $@
+
+test: all
+	prove Tests/*.py

@@ -34,12 +34,12 @@
 
 <body[% body_params %]>
 
-<table summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%">
+<table[% IF 0 %] summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%"[% END %]>
 <tr>
-<td valign="top" class="navbar" style="width:20%">
+<td class="navbar" style="width:20%">
 [% nav_menu_html %]
 </td>
-<td valign="top" class="main">
+<td class="main">
 <h1>[% title %]</h1>
 [%- END -%]
 
