@@ -235,6 +235,15 @@ LINKS:
         or die "[[" . $template->error() . "]]";
 
     $toc->add_toc( \$html );
+
+    my $remove_whitespace = sub {
+        $html =~ s#\A[\n]+##ms;
+        $html =~ s#[\n]+\z#\n#ms;
+        $html =~ s#\n\n+#\n#gms;
+        return;
+    };
+    $remove_whitespace->();
+
     if ( $self->stdout )
     {
         binmode STDOUT, ':encoding(utf-8)';
