@@ -37,11 +37,13 @@
 <table summary="Layout Table: The first cell contains a navigation bar, the second the main page" border="0" width="99%">
 <tr>
 <td valign="top" class="navbar" style="width:20%">
-
+[% nav_menu_html %]
 </td>
 <td valign="top" class="main">
 <h1>[% title %]</h1>
-[% content %]
+[%- END -%]
+
+[%- BLOCK end_html -%]
 
 </td>
 </tr>
@@ -52,11 +54,6 @@
 - <a href="mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>
 </p>
 
-</body>
-</html>
-[%- END -%]
-
-[%- BLOCK end_html -%]
 <p><a href=
 "http://www.addtoany.com/share_save?linkurl=[% share_link %]&amp;linkname=">
 <img src="[% base_path %]images/share_save_171_16.png" width="171" height="16"

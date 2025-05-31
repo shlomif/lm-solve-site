@@ -22,7 +22,7 @@ use YAML::XS                           ();
 has printable => ( is => 'ro', required => 1 );
 has stdout    => ( is => 'ro', required => 1 );
 
-my $LATEMP_SERVER = "scm";
+my $LATEMP_SERVER = "lmsolve";
 my $toc           = HTML::Latemp::AddToc->new;
 
 my $DEFAULT_TOC_DIV = Shlomif::Homepage::TocDiv::toc_div();
