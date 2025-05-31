@@ -26,7 +26,18 @@ my $obj = Shlomif::LMSolveSite::TTRender->new(
 
 if ( !@filenames )
 {
-    @filenames = path("lib/make/tt2.txt")->lines_raw( { chomp => 1 } );
+    # @filenames = path("lib/make/tt2.txt")->lines_raw( { chomp => 1 } );
+    my $state = path("./src/")->visit(
+        sub {
+            my ( $path, $state ) = @_;
+            my $p = $path->stringify;
+            if ( $p =~ s#\A(?:./)?src/##ms and $p =~ s#\.tt2\z##ms )
+            {
+                $state->{$p} = 1;
+            }
+        }
+    );
+    @filenames = ( sort keys(%$state) );
 }
 
 Parallel::Map::Segmented->new->run(
