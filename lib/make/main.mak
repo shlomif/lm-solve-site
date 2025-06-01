@@ -80,3 +80,6 @@ $(TT2S): dest/%: src/%.tt2 dest
 
 test: all
 	prove Tests/*.py
+
+rebuild:
+	export HTML_VALID_VNU_JAR=${HOME}/Download/unpack/net/www/validator/build/dist/vnu.jar ; git clean -dfx . && bash gen_helper.sh && gmake && perl bin/tt-render.pl && gmake test && gmake upload_remote
