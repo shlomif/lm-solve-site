@@ -63,7 +63,7 @@ information about how to download from CPAN.
 <li>
 <p>
 <a href="https://github.com/shlomif/lm-solve-source">VCS (= Version
-Control) Repository</a> for the Source,
+Control; Git / GitHub) Repository</a> for the Source,
 <a href="https://github.com/shlomif/lm-solve-site">one for the site</a>
 and <a href="https://github.com/shlomif/lm-solve-layouts">one</a> for
 transcribed (and possibly proprietary) layouts.
@@ -78,7 +78,6 @@ Record</a> - Freecode stopped being updated.
 </li>
 
 </ul>
-
 
 <ul>
 <li><p><a href="https://www.logicmazes.com/">The Logic Mazes site</a></p></li>
